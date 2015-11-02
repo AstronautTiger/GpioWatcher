@@ -1,0 +1,89 @@
+﻿<UserControl
+    x:Class="GpioWatcher.GpioWatcher"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GpioWatcher"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400" DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
+    <Grid HorizontalAlignment="Stretch" Height="80" Background="#404040" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions >
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <local:Pin x:Name="Pin02" Grid.Column="0" Grid.Row="0" ToolTip="DC Power 5V" PinColor="Red" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin04" Grid.Column="1" Grid.Row="0" ToolTip="DC Power 5V" PinColor="Red" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin06" Grid.Column="2" Grid.Row="0" ToolTip="Ground" PinColor="Black" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin08" Grid.Column="3" Grid.Row="0" ToolTip="GPIO14" PinColor="DarkOrange" />
+            <local:Pin x:Name="Pin10" Grid.Column="4" Grid.Row="0" ToolTip="GPIO15" PinColor="DarkOrange" />
+            <local:Pin x:Name="Pin12" Grid.Column="5" Grid.Row="0" ToolTip="GPRO18" PinColor="Green" />
+            <local:Pin x:Name="Pin14" Grid.Column="6" Grid.Row="0" ToolTip="Ground" PinColor="Black" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin16" Grid.Column="7" Grid.Row="0" ToolTip="GPIO23" PinColor="Green" />
+            <local:Pin x:Name="Pin18" Grid.Column="8" Grid.Row="0" ToolTip="GPIO24" PinColor="Green" />
+            <local:Pin x:Name="Pin20" Grid.Column="9" Grid.Row="0" ToolTip="Ground" PinColor="Black" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin22" Grid.Column="10" Grid.Row="0" ToolTip="GPIO25" PinColor="Green" />
+            <local:Pin x:Name="Pin24" Grid.Column="11" Grid.Row="0" ToolTip="GPIO08" PinColor="BlueViolet" />
+            <local:Pin x:Name="Pin26" Grid.Column="12" Grid.Row="0" ToolTip="GPIO07" PinColor="BlueViolet" />
+            <local:Pin x:Name="Pin28" Grid.Column="13" Grid.Row="0" ToolTip="ID_SC" PinColor="Orange" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin30" Grid.Column="14" Grid.Row="0" ToolTip="Ground" PinColor="Black" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin32" Grid.Column="15" Grid.Row="0" ToolTip="GPIO12" PinColor="Green" />
+            <local:Pin x:Name="Pin34" Grid.Column="16" Grid.Row="0" ToolTip="Ground" PinColor="Black" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin36" Grid.Column="17" Grid.Row="0" ToolTip="GPIO16" PinColor="Green" />
+            <local:Pin x:Name="Pin38" Grid.Column="18" Grid.Row="0" ToolTip="GPIO20" PinColor="Green" />
+            <local:Pin x:Name="Pin40" Grid.Column="19" Grid.Row="0" ToolTip="GPIO21" PinColor="Green" />
+
+            <local:Pin x:Name="Pin01" Grid.Column="0" Grid.Row="1" ToolTip="DC Power 3.3V" PinColor="DarkRed" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin03" Grid.Column="1" Grid.Row="1" ToolTip="GPIO02" PinColor="DeepSkyBlue" />
+            <local:Pin x:Name="Pin05" Grid.Column="2" Grid.Row="1" ToolTip="GPIO03" PinColor="DeepSkyBlue" />
+            <local:Pin x:Name="Pin07" Grid.Column="3" Grid.Row="1" ToolTip="GPIO04" PinColor="Green" />
+            <local:Pin x:Name="Pin09" Grid.Column="4" Grid.Row="1" ToolTip="Ground" PinColor="Black" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin11" Grid.Column="5" Grid.Row="1" ToolTip="GPIO17" PinColor="Green" />
+            <local:Pin x:Name="Pin13" Grid.Column="6" Grid.Row="1" ToolTip="GPIO27" PinColor="Green" />
+            <local:Pin x:Name="Pin15" Grid.Column="7" Grid.Row="1" ToolTip="GPIO22" PinColor="Green" />
+            <local:Pin x:Name="Pin17" Grid.Column="8" Grid.Row="1" ToolTip="DC Power 3.3" PinColor="DarkRed" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin19" Grid.Column="9" Grid.Row="1" ToolTip="GPIO10" PinColor="BlueViolet" />
+            <local:Pin x:Name="Pin21" Grid.Column="10" Grid.Row="1" ToolTip="GPIO09" PinColor="BlueViolet" />
+            <local:Pin x:Name="Pin23" Grid.Column="11" Grid.Row="1" ToolTip="GPIO11" PinColor="BlueViolet" />
+            <local:Pin x:Name="Pin25" Grid.Column="12" Grid.Row="1" ToolTip="Ground" PinColor="Black" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin27" Grid.Column="13" Grid.Row="1" ToolTip="ID_SD" PinColor="Orange" IsUnavailable="True"/>
+            <local:Pin x:Name="Pin29" Grid.Column="14" Grid.Row="1" ToolTip="GPIO05" PinColor="Green" />
+            <local:Pin x:Name="Pin31" Grid.Column="15" Grid.Row="1" ToolTip="GPIO06" PinColor="Green" />
+            <local:Pin x:Name="Pin33" Grid.Column="16" Grid.Row="1" ToolTip="GPIO13" PinColor="Green" />
+            <local:Pin x:Name="Pin35" Grid.Column="17" Grid.Row="1" ToolTip="GPIO19" PinColor="Green" />
+            <local:Pin x:Name="Pin37" Grid.Column="18" Grid.Row="1" ToolTip="GPIO26" PinColor="Green" />
+            <local:Pin x:Name="Pin39" Grid.Column="19" Grid.Row="1" ToolTip="Ground" PinColor="Black" IsUnavailable="True"/>
+        </Grid>
+        <TextBlock Grid.Row="1" Text="{Binding CurrentToolTip}" FontFamily="Segoe UI" FontSize="14" Foreground="AntiqueWhite" />
+    </Grid>
+</UserControl>
